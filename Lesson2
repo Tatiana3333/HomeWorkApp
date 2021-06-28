@@ -1,0 +1,59 @@
+public class Lesson2 {
+        public static void main(String[] args) {
+            System.out.println(CheckSum(7, 76));
+            sign(19);
+            System.out.println(mark(3));
+            message(5, "Привет!)");
+            System.out.println(leapYear(1600));
+        }
+
+        public static boolean CheckSum(int a, int b) {
+            int sum = a + b;
+            if (sum >= 10 && sum <= 20) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public static void sign(int x) {
+            x = 7;
+            if (x >= 0) {
+                System.out.println("Число положительное");
+
+            } else {
+                System.out.println("Число отрицательное");
+            }
+        }
+
+        public static boolean mark(int x) {
+            if (x >= 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public static void message(int n, String str) {
+            for (int a = 1; a <= n; a++) {
+                System.out.println(str);
+            }
+        }
+
+        public static boolean doTask5(int year) {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        public static boolean leapYear(int year) {
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
